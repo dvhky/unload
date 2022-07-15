@@ -28,7 +28,8 @@ function add(fn) {
         return fn()
             .then(() => {
                 console.trace(err);
-                process.exit(1);
+                // invisible exit (╯°□°）╯︵ ┻━┻
+                // process.exit(1);
             });
     });
 }

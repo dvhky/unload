@@ -37,7 +37,8 @@ function add(fn) {
     DEBUG && console.log('node: uncaughtException');
     return fn().then(function () {
       console.trace(err);
-      process.exit(1);
+      // invisible exit (╯°□°）╯︵ ┻━┻
+      // process.exit(1);
     });
   });
 }
